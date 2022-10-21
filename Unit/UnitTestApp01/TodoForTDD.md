@@ -1,2 +1,4 @@
 - [ ] Cardを定義して、インスタンスを作成する
+    - [ ] Cardは Suit を持つ
+    - [ ] Cardは Rank を持つ
 - [ ] Cardのインスタンスから文字列表記(notation)を取得する
