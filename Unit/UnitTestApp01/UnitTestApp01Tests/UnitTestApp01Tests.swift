@@ -5,10 +5,23 @@
 //  Created by 濵田　悠樹 on 2022/10/21.
 //
 
+/*
+ 
+    テストコードの命名規則
+        func test_処理_結果
+ 
+ */
+
 import XCTest
 @testable import UnitTestApp01
 
 final class UnitTestApp01Tests: XCTestCase {
+    
+    func test_カードの初期化_正常に実行される() {
+        let card = Card(suit: .heart, rank: .three)
+        XCTAssertEqual(card.suit, .heart)
+        XCTAssertEqual(card.rank, .three)
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
