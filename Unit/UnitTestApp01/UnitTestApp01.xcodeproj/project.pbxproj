@@ -15,6 +15,7 @@
 		D43516A32902B38C00DCF919 /* UnitTestApp01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43516A22902B38C00DCF919 /* UnitTestApp01Tests.swift */; };
 		D43516AD2902B38C00DCF919 /* UnitTestApp01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43516AC2902B38C00DCF919 /* UnitTestApp01UITests.swift */; };
 		D43516AF2902B38C00DCF919 /* UnitTestApp01UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43516AE2902B38C00DCF919 /* UnitTestApp01UITestsLaunchTests.swift */; };
+		D43516BC2902F01500DCF919 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43516BB2902F01500DCF919 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D43516A82902B38C00DCF919 /* UnitTestApp01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestApp01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43516AC2902B38C00DCF919 /* UnitTestApp01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestApp01UITests.swift; sourceTree = "<group>"; };
 		D43516AE2902B38C00DCF919 /* UnitTestApp01UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestApp01UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D43516BB2902F01500DCF919 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				D435168B2902B38A00DCF919 /* AppDelegate.swift */,
 				D435168D2902B38A00DCF919 /* SceneDelegate.swift */,
 				D435168F2902B38A00DCF919 /* ViewController.swift */,
+				D43516BB2902F01500DCF919 /* Card.swift */,
 				D43516942902B38C00DCF919 /* Assets.xcassets */,
 				D43516962902B38C00DCF919 /* LaunchScreen.storyboard */,
 				D43516992902B38C00DCF919 /* Info.plist */,
@@ -257,6 +260,7 @@
 				D43516902902B38A00DCF919 /* ViewController.swift in Sources */,
 				D435168C2902B38A00DCF919 /* AppDelegate.swift in Sources */,
 				D435168E2902B38A00DCF919 /* SceneDelegate.swift in Sources */,
+				D43516BC2902F01500DCF919 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
