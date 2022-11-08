@@ -59,6 +59,32 @@ final class UnitTestApp01Tests: XCTestCase {
         let card4 = Card(suit: .club, rank: .two)
         XCTAssertFalse(card3.hasSameRank(card: card4))
     }
+    
+    func test_2枚のカードが同じ_正常に実行される() {
+        /*
+        必要なテストは4つ
+            - suitが同じ & rankが同じ
+            - suitが異なる & rankが異なる
+            - suitが同じ & rankが異なる
+            - suitが異なる & rankが同じ
+         */
+        
+        // suitが同じ & rankが同じ
+        let card1 = Card(suit: .heart, rank: .ace)
+        let card2 = Card(suit: .heart, rank: .ace)
+        XCTAssertEqual(card1, card2)   // Card同士を比較するためには Card に Equatableプロトコル を準拠させる
+        
+        // suitが異なる & rankが異なる
+        let card3 = Card(suit: .heart, rank: .ace)
+        let card4 = Card(suit: .club, rank: .two)
+        XCTAssertNotEqual(card3, card4)
+        
+        // suitが同じ & rankが異なる
+        XCTAssertNotEqual(Card(suit: .heart, rank: .ace), Card(suit: .heart, rank: .two))   // 省略形
+        
+        // suitが異なる & rankが同じ
+        XCTAssertNotEqual(Card(suit: .heart, rank: .ace), Card(suit: .club, rank: .ace))
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Card {
+// 2枚のカードが同じか判別するため Equatableプロトコル を準拠する
+struct Card: Equatable {
     let suit: Suit
     let rank: Rank
     
