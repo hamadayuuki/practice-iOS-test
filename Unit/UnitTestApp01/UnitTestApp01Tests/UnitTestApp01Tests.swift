@@ -28,6 +28,11 @@ final class UnitTestApp01Tests: XCTestCase {
         XCTAssertNotEqual(card.suit, .spade)
         XCTAssertNotEqual(card.rank, .jack)
     }
+    
+    func test_マークと数字_正常に実行される() {
+        let card = Card(suit: .heart, rank: .three)
+        XCTAssertEqual(card.notation, "3❤️")
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
