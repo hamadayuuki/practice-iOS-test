@@ -17,6 +17,8 @@ import XCTest
 
 final class UnitTestApp01Tests: XCTestCase {
     
+    // test_マークと数字_正常に実行される() で代わりにテスト可能
+    /*
     func test_カードの初期化_正常に実行される() {
         let card = Card(suit: .heart, rank: .three)
         XCTAssertEqual(card.suit, .heart)
@@ -28,6 +30,7 @@ final class UnitTestApp01Tests: XCTestCase {
         XCTAssertNotEqual(card.suit, .spade)
         XCTAssertNotEqual(card.rank, .jack)
     }
+     */
     
     func test_マークと数字_正常に実行される() {
         let card = Card(suit: .heart, rank: .three)
