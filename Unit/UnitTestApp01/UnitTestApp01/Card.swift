@@ -11,6 +11,8 @@ struct Card {
     let suit: Suit
     let rank: Rank
     
+    // 同じenum同士なら等価判定が可能
+    // Equatableプロトコルへの準拠は不要
     enum Suit: String {
         case spade   = "♠️"
         case heart   = "❤️"
@@ -39,7 +41,7 @@ struct Card {
     }
     
     func hasSameSuit(card: Card) -> Bool {
-        return true
+        return self.suit == card.suit
     }
 }
 
