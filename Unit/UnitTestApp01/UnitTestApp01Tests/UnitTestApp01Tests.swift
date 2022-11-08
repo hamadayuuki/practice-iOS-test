@@ -31,7 +31,10 @@ final class UnitTestApp01Tests: XCTestCase {
     
     func test_マークと数字_正常に実行される() {
         let card = Card(suit: .heart, rank: .three)
-        XCTAssertEqual(card.notation, "3❤️")
+        XCTAssertEqual(card.notation, "❤️3")
+        
+        let card2 = Card(suit: .club, rank: .jack)
+        XCTAssertEqual(card2.notation, "♣️J")
     }
 
     override func setUpWithError() throws {

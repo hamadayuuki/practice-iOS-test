@@ -11,31 +11,31 @@ struct Card {
     let suit: Suit
     let rank: Rank
     
-    enum Suit {
-        case spade
-        case heart
-        case club
-        case diamond
+    enum Suit: String {
+        case spade   = "♠️"
+        case heart   = "❤️"
+        case club    = "♣️"
+        case diamond = "🔷"
     }
     
-    enum Rank {
-        case ace
-        case two
-        case three
-        case four
-        case five
-        case six
-        case seven
-        case eight
-        case nine
-        case ten
-        case jack
-        case queen
-        case king
+    enum Rank: String {
+        case ace    = "A"
+        case two    = "2"
+        case three  = "3"
+        case four   = "4"
+        case five   = "5"
+        case six    = "6"
+        case seven  = "7"
+        case eight  = "8"
+        case nine   = "9"
+        case ten    = "10"
+        case jack   = "J"
+        case queen  = "Q"
+        case king   = "K"
     }
     
     var notation: String {
-        return "3❤️"
+        return suit.rawValue + rank.rawValue   // enum は rawValue を使うと要素に割り当てられた値を取得可能
     }
 }
 
