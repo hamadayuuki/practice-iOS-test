@@ -39,6 +39,12 @@ final class UnitTestApp01Tests: XCTestCase {
         let card2 = Card(suit: .club, rank: .jack)
         XCTAssertEqual(card2.notation, "♣️J")
     }
+    
+    func test_2枚のカードが同じ_正常に実行される() {
+        let card1 = Card(suit: .heart, rank: .ace)
+        let card2 = Card(suit: .heart, rank: .two)
+        XCTAssertTrue(card1.hasSameSuit(card: card2))
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

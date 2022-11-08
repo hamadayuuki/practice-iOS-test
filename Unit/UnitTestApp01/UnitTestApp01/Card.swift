@@ -37,5 +37,9 @@ struct Card {
     var notation: String {
         return suit.rawValue + rank.rawValue   // enum は rawValue を使うと要素に割り当てられた値を取得可能
     }
+    
+    func hasSameSuit(card: Card) -> Bool {
+        return true
+    }
 }
 
