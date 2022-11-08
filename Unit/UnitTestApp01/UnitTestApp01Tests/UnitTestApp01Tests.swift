@@ -40,7 +40,7 @@ final class UnitTestApp01Tests: XCTestCase {
         XCTAssertEqual(card2.notation, "♣️J")
     }
     
-    func test_2枚のカードが同じ_正常に実行される() {
+    func test_2枚のカードの柄が同じ_正常に実行される() {
         let card1 = Card(suit: .heart, rank: .ace)
         let card2 = Card(suit: .heart, rank: .two)
         XCTAssertTrue(card1.hasSameSuit(card: card2))   // card1 と card2 の柄が"同じか"判別
@@ -48,6 +48,16 @@ final class UnitTestApp01Tests: XCTestCase {
         let card3 = Card(suit: .heart, rank: .ace)
         let card4 = Card(suit: .club, rank: .two)
         XCTAssertFalse(card3.hasSameSuit(card: card4))   // card3 と card4 の柄が"異なるか"判別
+    }
+    
+    func test_2枚のカードの数字が同じ_正常に実行される() {
+        let card1 = Card(suit: .heart, rank: .ace)
+        let card2 = Card(suit: .club, rank: .ace)
+        XCTAssertTrue(card1.hasSameRank(card: card2))
+        
+        let card3 = Card(suit: .heart, rank: .ace)
+        let card4 = Card(suit: .club, rank: .two)
+        XCTAssertFalse(card3.hasSameRank(card: card4))
     }
 
     override func setUpWithError() throws {
