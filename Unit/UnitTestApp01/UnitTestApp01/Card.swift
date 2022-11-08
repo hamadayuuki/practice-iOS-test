@@ -33,5 +33,9 @@ struct Card {
         case queen
         case king
     }
+    
+    var notation: String {
+        return "3❤️"
+    }
 }
 
