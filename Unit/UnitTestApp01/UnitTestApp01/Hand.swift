@@ -19,5 +19,9 @@ struct Hand {
         
         return self.cards[0].rank == self.cards[1].rank   // cards の長さが2ではない時 や Handが0枚の時 を考慮できていない → TODOに記載しておく
     }
+    
+    var isFlash: Bool {
+        return self.cards[0].suit == self.cards[1].suit
+    }
 }
 
