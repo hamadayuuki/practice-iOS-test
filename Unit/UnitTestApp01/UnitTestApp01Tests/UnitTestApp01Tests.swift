@@ -86,6 +86,31 @@ final class UnitTestApp01Tests: XCTestCase {
         // suitが異なる & rankが同じ
         XCTAssertNotEqual(Card(suit: .heart, rank: .ace), Card(suit: .club, rank: .ace))
     }
+    
+    func test_2枚のカードがペアかについて() {
+        let card1 = Card(suit: .heart, rank: .ace)
+        let card2 = Card(suit: .heart, rank: .ace)
+        let hand = Hand(cards: [card1, card2])
+        XCTAssertTrue(hand.isPair)
+        
+        // Hand を一般化するための三角測量法
+        let card3 = Card(suit: .club, rank: .ace)
+        let card4 = Card(suit: .heart, rank: .two)
+        let hand2 = Hand(cards: [card3, card4])
+        XCTAssertFalse(hand2.isPair)
+    }
+    
+    func test_2枚のカードがフラッシュかについて() {
+        let card1 = Card(suit: .heart, rank: .ace)
+        let card2 = Card(suit: .heart, rank: .ace)
+        let hand = Hand(cards: [card1, card2])
+        XCTAssertTrue(hand.isFlash)
+        
+        let card3 = Card(suit: .club, rank: .ace)
+        let card4 = Card(suit: .heart, rank: .two)
+        let hand2 = Hand(cards: [card3, card4])
+        XCTAssertFalse(hand2.isFlash)
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
