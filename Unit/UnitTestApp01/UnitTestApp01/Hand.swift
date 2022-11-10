@@ -15,7 +15,9 @@ struct Hand {
     }
     
     var isPair: Bool {
-        return true   // 仮実装
+        //return true   // 仮実装
+        
+        return self.cards[0].rank == self.cards[1].rank   // cards の長さが2ではない時 や Handが0枚の時 を考慮できていない → TODOに記載しておく
     }
 }
 

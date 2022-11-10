@@ -92,6 +92,12 @@ final class UnitTestApp01Tests: XCTestCase {
         let card2 = Card(suit: .heart, rank: .ace)
         let hand = Hand(cards: [card1, card2])
         XCTAssertTrue(hand.isPair)
+        
+        // Hand を一般化するための三角測量法
+        let card3 = Card(suit: .club, rank: .ace)
+        let card4 = Card(suit: .heart, rank: .two)
+        let hand2 = Hand(cards: [card3, card4])
+        XCTAssertFalse(hand2.isPair)
     }
 
     override func setUpWithError() throws {
