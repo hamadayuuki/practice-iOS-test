@@ -16,6 +16,7 @@
 		D43516AD2902B38C00DCF919 /* UnitTestApp01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43516AC2902B38C00DCF919 /* UnitTestApp01UITests.swift */; };
 		D43516AF2902B38C00DCF919 /* UnitTestApp01UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43516AE2902B38C00DCF919 /* UnitTestApp01UITestsLaunchTests.swift */; };
 		D43516BC2902F01500DCF919 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43516BB2902F01500DCF919 /* Card.swift */; };
+		D44F5CCD291D3E4400DE7818 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F5CCC291D3E4400DE7818 /* Hand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D43516AC2902B38C00DCF919 /* UnitTestApp01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestApp01UITests.swift; sourceTree = "<group>"; };
 		D43516AE2902B38C00DCF919 /* UnitTestApp01UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestApp01UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D43516BB2902F01500DCF919 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		D44F5CCC291D3E4400DE7818 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				D435168D2902B38A00DCF919 /* SceneDelegate.swift */,
 				D435168F2902B38A00DCF919 /* ViewController.swift */,
 				D43516BB2902F01500DCF919 /* Card.swift */,
+				D44F5CCC291D3E4400DE7818 /* Hand.swift */,
 				D43516942902B38C00DCF919 /* Assets.xcassets */,
 				D43516962902B38C00DCF919 /* LaunchScreen.storyboard */,
 				D43516992902B38C00DCF919 /* Info.plist */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D43516902902B38A00DCF919 /* ViewController.swift in Sources */,
+				D44F5CCD291D3E4400DE7818 /* Hand.swift in Sources */,
 				D435168C2902B38A00DCF919 /* AppDelegate.swift in Sources */,
 				D435168E2902B38A00DCF919 /* SceneDelegate.swift in Sources */,
 				D43516BC2902F01500DCF919 /* Card.swift in Sources */,
