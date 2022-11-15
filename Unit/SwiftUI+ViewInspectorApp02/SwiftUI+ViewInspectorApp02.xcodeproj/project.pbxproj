@@ -14,7 +14,7 @@
 		D44F5D6A2923929700DE7818 /* SwiftUI_ViewInspectorApp02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F5D692923929700DE7818 /* SwiftUI_ViewInspectorApp02Tests.swift */; };
 		D44F5D742923929700DE7818 /* SwiftUI_ViewInspectorApp02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F5D732923929700DE7818 /* SwiftUI_ViewInspectorApp02UITests.swift */; };
 		D44F5D762923929700DE7818 /* SwiftUI_ViewInspectorApp02UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F5D752923929700DE7818 /* SwiftUI_ViewInspectorApp02UITestsLaunchTests.swift */; };
-		D44F5D8429239A8900DE7818 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = D44F5D8329239A8900DE7818 /* ViewInspector */; };
+		D44F5D8729239D3800DE7818 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = D44F5D8629239D3800DE7818 /* ViewInspector */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D44F5D8429239A8900DE7818 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44F5D8729239D3800DE7818 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +146,6 @@
 			);
 			name = "SwiftUI+ViewInspectorApp02";
 			packageProductDependencies = (
-				D44F5D8329239A8900DE7818 /* ViewInspector */,
 			);
 			productName = "SwiftUI+ViewInspectorApp02";
 			productReference = D44F5D552923929400DE7818 /* SwiftUI+ViewInspectorApp02.app */;
@@ -166,6 +165,9 @@
 				D44F5D672923929700DE7818 /* PBXTargetDependency */,
 			);
 			name = "SwiftUI+ViewInspectorApp02Tests";
+			packageProductDependencies = (
+				D44F5D8629239D3800DE7818 /* ViewInspector */,
+			);
 			productName = "SwiftUI+ViewInspectorApp02Tests";
 			productReference = D44F5D652923929700DE7818 /* SwiftUI+ViewInspectorApp02Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -221,7 +223,7 @@
 			);
 			mainGroup = D44F5D4C2923929400DE7818;
 			packageReferences = (
-				D44F5D8229239A8900DE7818 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				D44F5D8529239D3800DE7818 /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = D44F5D562923929400DE7818 /* Products */;
 			projectDirPath = "";
@@ -593,7 +595,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D44F5D8229239A8900DE7818 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+		D44F5D8529239D3800DE7818 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nalexn/ViewInspector";
 			requirement = {
@@ -604,9 +606,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D44F5D8329239A8900DE7818 /* ViewInspector */ = {
+		D44F5D8629239D3800DE7818 /* ViewInspector */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D44F5D8229239A8900DE7818 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			package = D44F5D8529239D3800DE7818 /* XCRemoteSwiftPackageReference "ViewInspector" */;
 			productName = ViewInspector;
 		};
 /* End XCSwiftPackageProductDependency section */

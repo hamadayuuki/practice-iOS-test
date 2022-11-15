@@ -6,10 +6,32 @@
 //
 
 import XCTest
+import ViewInspector
+
 @testable import SwiftUI_ViewInspectorApp02
 
-final class SwiftUI_ViewInspectorApp02Tests: XCTestCase {
+extension ContentView: Inspectable { }
 
+final class SwiftUI_ViewInspectorApp02Tests: XCTestCase {
+    
+    func test_画面に表示されている文字() throws {
+        try XCTContext.runActivity(named: "static string") { _ in
+            let view = ContentView()
+            let text = try view.inspect().vStack().text(0).string()   // VStackの0番目に配置されている要素
+            XCTAssertEqual(text, "Hellow World!")
+        }
+        
+        try XCTContext.runActivity(named: "dynamic string") { _ in
+            let view = ContentView()
+            var count = try view.inspect().vStack().text(1).string()   // カウントの初期値
+            XCTAssertEqual(count, "0")
+            
+            try view.inspect().vStack().button(2).tap()
+            count = try view.inspect().vStack().text(1).string()
+            XCTAssertEqual(count, "1")   // エラー
+        }
+    }
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
