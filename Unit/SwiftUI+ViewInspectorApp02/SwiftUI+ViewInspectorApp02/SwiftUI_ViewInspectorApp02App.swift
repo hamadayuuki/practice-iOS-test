@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftUI_ViewInspectorApp02App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: .init(count: 0))
+            
         }
     }
 }

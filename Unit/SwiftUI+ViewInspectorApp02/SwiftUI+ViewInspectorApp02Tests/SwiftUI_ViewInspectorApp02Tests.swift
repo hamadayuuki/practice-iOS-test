@@ -16,19 +16,19 @@ final class SwiftUI_ViewInspectorApp02Tests: XCTestCase {
     
     func test_画面に表示されている文字() throws {
         try XCTContext.runActivity(named: "static string") { _ in
-            let view = ContentView()
+            let view = ContentView(viewModel: .init(count: 0))
             let text = try view.inspect().vStack().text(0).string()   // VStackの0番目に配置されている要素
             XCTAssertEqual(text, "Hellow World!")
         }
         
         try XCTContext.runActivity(named: "dynamic string") { _ in
-            let view = ContentView()
+            let view = ContentView(viewModel: .init(count: 0))
             var count = try view.inspect().vStack().text(1).string()   // カウントの初期値
             XCTAssertEqual(count, "0")
             
             try view.inspect().vStack().button(2).tap()
             count = try view.inspect().vStack().text(1).string()
-            XCTAssertEqual(count, "1")   // エラー
+            XCTAssertEqual(count, "1")   // ViewModelを介すことでエラー解消
         }
     }
     
