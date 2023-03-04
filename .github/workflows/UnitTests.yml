@@ -16,23 +16,5 @@ jobs:
         with:
           xcode-version: '14.1.0'
 
-      - name: Ls Directory
-        run: ls -al
-
-      - name: Move Directory
-        run: cd Unit
-
-      - name: Ls Directory
-        run: ls -al
-        
-      - name: Move Directory
-        run: cd UnitTestApp01
-
-      - name: Ls Directory
-        run: ls -al
-
       - name: UnitTests
-        run: xcodebuild test -scheme UnitTestApp01 -sdk iphonesimulator -destination platform='iOS Simulator,name=iPhone 12,OS=16.1'
-
-      - name: UITests
-        run: xcodebuild test -scheme UITests -sdk iphonesimulator -destination platform='iOS Simulator,name=iPhone 12,OS=16.
+        run: xcodebuild test -project Unit/UnitTestApp01/UnitTestApp01.xcodeproj -scheme UnitTestApp01 -sdk iphonesimulator -destination platform='iOS Simulator,name=iPhone 12,OS=16.1'
