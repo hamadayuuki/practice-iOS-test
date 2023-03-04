@@ -10,6 +10,9 @@ jobs:
     runs-on: macOS-latest
 
     steps:
+      - name: Ls Directory
+        run: ls -al
+        
       - name: Move Directory
         run: cd Unit/UnitTestApp01
         
