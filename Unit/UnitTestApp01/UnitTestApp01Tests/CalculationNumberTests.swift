@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import UnitTestApp01   // テスト対象のモジュールを指定, テスト対象のCalculationNumberクラスはUnitTestApp01モジュールと依存関係にあるので、今回はモジュールダ名がフォルダ名が
+@testable import UnitTestApp01   // テスト対象のモジュールを指定, テスト対象のCalculationNumberクラスはUnitTestApp01モジュールと依存関係にあるので、今回はモジュールダ名がフォルダ名と同様になる
 
 final class CalculationNumberTests: XCTestCase {
     func test_足し算_成功() {
