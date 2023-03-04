@@ -18,6 +18,7 @@
 		D43516BC2902F01500DCF919 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43516BB2902F01500DCF919 /* Card.swift */; };
 		D44F5CCD291D3E4400DE7818 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F5CCC291D3E4400DE7818 /* Hand.swift */; };
 		D487C4BF29B351E300022E3C /* CalculationNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = D487C4BE29B351E300022E3C /* CalculationNumber.swift */; };
+		D487C4C129B3538F00022E3C /* CalculationNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D487C4C029B3538F00022E3C /* CalculationNumberTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D43516BB2902F01500DCF919 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		D44F5CCC291D3E4400DE7818 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
 		D487C4BE29B351E300022E3C /* CalculationNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationNumber.swift; sourceTree = "<group>"; };
+		D487C4C029B3538F00022E3C /* CalculationNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationNumberTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				D43516A22902B38C00DCF919 /* UnitTestApp01Tests.swift */,
+				D487C4C029B3538F00022E3C /* CalculationNumberTests.swift */,
 			);
 			path = UnitTestApp01Tests;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D487C4C129B3538F00022E3C /* CalculationNumberTests.swift in Sources */,
 				D43516A32902B38C00DCF919 /* UnitTestApp01Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
