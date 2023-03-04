@@ -10,6 +10,9 @@ jobs:
     runs-on: macOS-latest
 
     steps:
+      - name: Move Directory
+        run: cd Unit/UnitTestApp01
+        
       - uses: actions/checkout@v2
 
       - uses: maxim-lobanov/setup-xcode@v1
