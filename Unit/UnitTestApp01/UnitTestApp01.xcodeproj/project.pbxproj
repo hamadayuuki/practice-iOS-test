@@ -17,6 +17,7 @@
 		D43516AF2902B38C00DCF919 /* UnitTestApp01UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43516AE2902B38C00DCF919 /* UnitTestApp01UITestsLaunchTests.swift */; };
 		D43516BC2902F01500DCF919 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43516BB2902F01500DCF919 /* Card.swift */; };
 		D44F5CCD291D3E4400DE7818 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F5CCC291D3E4400DE7818 /* Hand.swift */; };
+		D487C4BF29B351E300022E3C /* CalculationNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = D487C4BE29B351E300022E3C /* CalculationNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D43516AE2902B38C00DCF919 /* UnitTestApp01UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestApp01UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D43516BB2902F01500DCF919 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		D44F5CCC291D3E4400DE7818 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		D487C4BE29B351E300022E3C /* CalculationNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				D43516942902B38C00DCF919 /* Assets.xcassets */,
 				D43516962902B38C00DCF919 /* LaunchScreen.storyboard */,
 				D43516992902B38C00DCF919 /* Info.plist */,
+				D487C4BE29B351E300022E3C /* CalculationNumber.swift */,
 			);
 			path = UnitTestApp01;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				D44F5CCD291D3E4400DE7818 /* Hand.swift in Sources */,
 				D435168C2902B38A00DCF919 /* AppDelegate.swift in Sources */,
 				D435168E2902B38A00DCF919 /* SceneDelegate.swift in Sources */,
+				D487C4BF29B351E300022E3C /* CalculationNumber.swift in Sources */,
 				D43516BC2902F01500DCF919 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
