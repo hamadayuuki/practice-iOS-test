@@ -20,7 +20,13 @@ jobs:
         run: ls -al
 
       - name: Move Directory
-        run: cd Unit/UnitTestApp01
+        run: cd Unit
+
+      - name: Ls Directory
+        run: ls -al
+        
+      - name: Move Directory
+        run: cd UnitTestApp01
 
       - name: Ls Directory
         run: ls -al
